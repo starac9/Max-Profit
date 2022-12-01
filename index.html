@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>Max Profit</title>
+</head>
+<body>
+    <div class="main_section">
+        <h1>Max Profit </h1>
+        <div>
+            <text>Enter Number of Days</text>
+        </div>
+        <input id="days" class="input_box" oninput="loader(true); inputChanged()" placeholder="0">
+        <div class="skeleton skeleton-text skeleton-profit"></div>
+        <text class="data">Total Earning: $<span id="profit">0</span></text>
+        <div class="building_container">
+            <div class="image_container">
+                <img src="images\cinema.jpg" alt="theatre" class="building_image">
+                <div class="skeleton skeleton-text"></div>
+                <p class="data">Count: <span id="theatre">0</span></p>
+            </div>
+            <div class="image_container">
+                <img src="images\pub.jpg" alt="pub" class="building_image">
+                <div class="skeleton skeleton-text"></div>
+                <p class="data">Count: <span id="pub">0</span></p>
+            </div>
+            <div class="image_container">
+                <img src="images\cp.jpg" alt="complex" class="building_image">
+                <div class="skeleton skeleton-text"></div>
+                <p class="data">Count: <span id="complex">0</span></p>
+            </div>
+        </div>
+        <div class="skeleton skeleton-text skeleton-button"></div>
+        <button class="data" onclick="otherSolution()">Other Solution</button>
+    </div>
+</body>
+</html>
